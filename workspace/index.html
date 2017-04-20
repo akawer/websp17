@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ExpresaTec - Login</title>
+  <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="css/style_index.css">
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+</head>
+
+<body>
+  
+<!-- Mixins-->
+<!-- Pen Title-->
+<div class="pen-title">
+  <h1>Welcome to ExpresaTec</h1>
+  <span>Made with <a href='https://github.com/expresaTec' target="_blank"><i class='fa fa-heart'></i></a></span>
+</div>
+
+<div button type="button" data-toggle="modal" data-target="#myModal" class="rerun"><a href="https://image.ibb.co/ikdZ5k/Our_Promise.png">Our Promise</a></div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="https://image.ibb.co/ikdZ5k/Our_Promise.png" class="img-responsive">
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title">Login</h1>
+    <form>
+      <div class="input-container">
+        <input type="text" pattern="[\w.%+-]+@itesm\.mx" id="loginUserName" required="required"/>
+        <label for="#{label}">Student Email</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" id="loginPassword" required="required"/>
+        <!-- For password 1 upper, 1 lower, 1 special, number and min 8 chars -> pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}" -->
+        <label for="#{label}">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+      </div>
+      <div class="footer"></div>
+    </form>
+  </div>
+  <div class="card alt">
+    <div class="toggle"></div>
+    <h1 class="title">Register
+      <div class="close"></div>
+    </h1>
+    <form>
+      <div class="input-container">
+        <input type="text" pattern="[\w.%+-]+@itesm\.mx" id="registerUserName" required="required"/>
+        <label for="#{label}">Student Email</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" id="registerPassword" required="required"/>
+        <label for="#{label}">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" id="registerConfirmPassword" required="required"/>
+        <label for="#{label}">Confirm Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <!-- <button id="registerButton" type="submit" name="Register"><span>Next</span></button> -->
+        <!-- <input id="registerButton" type="submit"><span>Next</span></input> -->
+      </div>
+
+    </form>
+  </div>
+</div>
+<div class='wrapper'>
+<input id="registerButton" type="submit" name="Register" value="Register" />
+<input id="loginButton" type="submit" name="Login" value="Login" />
+</div>
+<!--Portfolio-->
+ <!--<a id="portfolio" href="https://s-media-cache-ak0.pinimg.com/originals/52/7f/08/527f08438ec2f001cde03f8cb13fce79.jpg" target="_blank" title="YES!"><i class="fa fa-link"></i></a>-->
+<!-- CodePen--><a id="codepen" href="https://github.com/expresaTec" target="_blank" title="Source Code!"><i class="fa fa-codepen"></i></a>
+<script src="js/indexToggle.js"></script>
+<script type="text/javascript" src="js/indexScript.js"></script>
+</body>
+</html>

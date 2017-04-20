@@ -1,0 +1,47 @@
+// Mixins
+mixin input(type, label)
+  .input-container
+    input(type='#{type}' id='#{label}' required)
+    label(for='#{label}')=label
+    .bar
+mixin button(text)
+  .button-container
+    button
+      span=text
+
+// Pen Title
+.pen-title
+  h1 Material Login Form
+  span
+    | Pen <i class='fa fa-heart'></i> by <a href='https://github.com/expresaTec'>Andy Tran</a>
+    
+.rerun
+  a(href='') Rerun Pen
+  
+.container
+  .card
+  .card
+    h1.title Login
+    form
+      +input('text', 'Student Email')
+      +input('password', 'Password')
+      +button('Go')
+      .footer
+        //a(href='#') Forgot your password?
+  .card.alt
+    .toggle
+    h1.title Register
+      .close
+    form
+      +input('text', 'Student Email')
+      +input('password', 'Password')
+      +input('password', 'Repeat Password')
+      +button('Next')
+
+// Portfolio
+// a#portfolio(href='https://s-media-cache-ak0.pinimg.com/originals/52/7f/08/527f08438ec2f001cde03f8cb13fce79.jpg' title='YES!')
+  i.fa.fa-link
+  
+// CodePen
+a#codepen(href='https://github.com/expresaTec' title='Source Code!')
+  i.fa.fa-codepen

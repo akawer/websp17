@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <title>ExpresaTec</title>
+  <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="css/style_submit.css">
+  <!-- <script type="text/javascript" src="js/homeScript.js"></script> -->
+  <script type="text/javascript" src="js/postComment.js"></script>
+</head>
+
+<body>
+<!-- Navbar starts -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">Faqs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Navbar ends -->
+<div id="contact-form">
+  <div>
+    <h1>Express Yourself Freely!</h1> 
+    <h4>100% anonymous. Made for and by you.</h4> 
+  </div>
+    <!-- <p id="failure">...message not sent.</p>   -->
+    <!-- <p id="success">Your message was sent successfully. Thank you!</p> -->
+
+ <form method="post" action="/">
+  <div>             
+      <label for="subject">
+      <span>Subject: *</span>
+        <select required id="commentCategory" name="subject" tabindex="4">   
+          <option value=""></option>
+          <option value="Academic Life">Academic Life</option>  
+          <option value="Clubs">Clubs</option>
+          <option value="Exchange Programs">Exchange Programs</option>
+          <option value="Food">Food</option>
+          <option value="Life at Tec">Life at Tec</option>
+          <option value="Majors">Majors</option>
+          <option value="Miscellaneous">Miscellaneous</option>
+          <option value="Professors">Professors</option>
+          <option value="Services">Services</option>
+          <option value="Sports">Sports</option>
+        </select>
+      </label>
+  </div>
+  <div>             
+      <label for="message">
+        <span class="required">Message: *</span> 
+        <textarea id="commentText" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+      </label>  
+  </div>
+  <div>
+  </div>
+ </form>
+     <input name="Submit" value="Submit" type="submit" id="submitButton" style="background-color: #23155D;"/> </br></br>
+
+</body>
+</html>
+
